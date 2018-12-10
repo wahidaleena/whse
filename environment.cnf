@@ -1,0 +1,7 @@
+TABLENAME = Received_Items
+DBNAME = Warehouse_Receipts
+USERNAME = user@2018
+PASSWORD = Passw0rd
+
+HOST = DWSSHOME
+filename = N01.Z4.SAMPLE.OUT
