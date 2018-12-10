@@ -16,7 +16,7 @@ struct Data
 
 int main () {
   
-                ifstream myfile;
+                FILE *fp;
                 struct Data d[100];
                 char DB_NAME[1000],TABLE_NAME[1000],USER[1000],PASS[1000],FILEN[1000];
                 
@@ -27,7 +27,7 @@ int main () {
                 strcpy(HOST, getenv('HOST'));
                 strcpy(FILENAME, getenv('FILENAME'));
 
-                myfile.open (FILENAME);
+                fp = fopen(FILENAME, 'w');
                 
                 int j = 0;
                 while (j<i)
