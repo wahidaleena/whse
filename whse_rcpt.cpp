@@ -20,14 +20,14 @@ int main () {
                 struct Data d[100];
                 char DB_NAME[1000],TABLE_NAME[1000],USER[1000],PASS[1000],FILEN[1000];
                 
-                strcpy(DB_NAME, getenv('DBNAME'));
-                strcpy(TABLE_NAME, getenv('TABLENAME'));
-                strcpy(USER, getenv('USERNAME'));
-                strcpy(PASS, getenv('PASSWORD'));
-                strcpy(HOST, getenv('HOST'));
-                strcpy(FILENAME, getenv('FILENAME'));
+                strcpy(DB_NAME, getenv("DBNAME"));
+                strcpy(TABLE_NAME, getenv("TABLENAME"));
+                strcpy(USER, getenv("USERNAME"));
+                strcpy(PASS, getenv("PASSWORD"));
+                strcpy(HOST, getenv("HOST"));
+                strcpy(FILENAME, getenv("FILENAME"));
 
-                fp = fopen(FILENAME, 'w');
+                fp = fopen(FILENAME, "w");
                 
                 int j = 0;
                 while (j<i)
