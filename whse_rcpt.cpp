@@ -30,7 +30,7 @@ int main () {
                 fp = fopen(FILENAME, "w");
                 
                 int j = 0;
-                while (j<i)
+                while (j<10)
                 {
                                 string i_num = d[j].i_num;
                                 string stat = d[j].m_stat;
@@ -66,7 +66,7 @@ bool connect2Mysql(mysql, HOST, USER, PASS, TABLE_NAME)
 void updateDB(MYSQL mysql,FILE *myfile,Data d)
 {
                 int j = 0;
-                while (j<i)
+                while (j<10)
                 {
                                 string i_num = d[j].i_num;
                                 string stat = d[j].m_stat;
