@@ -42,7 +42,7 @@ int main () {
 
                 if(status== True)
                 {
-                                updateDB(mysql,d);
+                                updateDB(mysql,fp,d);
                                 fprintf(fp, "UPDATE TABLE_NAME SET movement_status = %s WHERE item_nbr = %s", stat,i_num);
                 }
                 else
