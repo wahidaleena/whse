@@ -38,7 +38,7 @@ int main () {
                 }
                 
                 MYSQL mysql;
-                status = connect2Mysql(mysql, HOST, USER, PASS, TABLE_NAME);
+                status = connect2Mysql(mysql, HOST, USER, PASS, DB_NAME);
 
                 if(status== True)
                 {
@@ -55,7 +55,7 @@ int main () {
 
 }
 
-bool connect2Mysql(mysql, HOST, USER, PASS, TABLE_NAME)
+bool connect2Mysql(MYSQL *mysql, char *HOST, char *USER, char *PASS, char *DB_NAME)
 {
                 bool status;
                 mysql = mysql_init(NULL);
