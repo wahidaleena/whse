@@ -88,4 +88,9 @@ void updateFile(FILE *myfile,Data d)
                                 getline(myfile, d[i++].s_loc, '\n');
                 }
 }
-vo
+void queries()
+{
+    mysql_query(mysql,"SELECT item_nbr, movement_status, storage_location FROM Received_Items where movement_status = 'pending'")
+        
+
+}
