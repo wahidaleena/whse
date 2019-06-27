@@ -95,5 +95,5 @@ void queries()
     mysql_query(mysql,"SELECT * From Customers WHERE Name LIKE 'Herb%'");
     mysql_query(mysql,"INSERT INTO Yearly_Orders SELECT * FROM Orders WHERE Date<=1/1/2018");
     mysql_query(mysql,"SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate FROM Orders INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID");
-        
+    mysql_query(mysql,"SELECT ROLL_NO,NAME FROM Student WHERE ROLL_NO>3 UNION ALL SELECT ROLL_NO,Branch FROM Student_Details WHERE ROLL_NO<3 ORDER BY 1");     
 }
