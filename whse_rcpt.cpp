@@ -92,6 +92,7 @@ void queries()
 {
     mysql_query(mysql,"SELECT item_nbr, movement_status, storage_location FROM Received_Items where movement_status = 'pending'");
     mysql_query(mysql,"SELECT COUNT(CustomerID), Country FROM Customers GROUP BY Country;SELECT AVG(Price)FROM Products");
+    mysql_query(mysql,"INCLUDE COMSG;FETCH MULTIROG_SSITMROG INTO :IRG-ROG;OPEN MULTIROG_SSITMROG");
     mysql_query(mysql,"SELECT * From Customers WHERE Name LIKE 'Herb%'");
     mysql_query(mysql,"INSERT INTO Yearly_Orders SELECT * FROM Orders WHERE Date<=1/1/2018");
     mysql_query(mysql,"SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate FROM Orders INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID");
