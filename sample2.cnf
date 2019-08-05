@@ -1,0 +1,5 @@
+PRD:
+    APP_SERVER=whse_auth01
+    DB_SERVER=wh_auth01
+    PLATFORM_BKND=Unix
+    PLATFORM_UI=Linux
